@@ -43,7 +43,7 @@ class Board
   end
 
   def valid_move?(integer_string)
-    !taken?(integer_string) && /[0-9]/.match(integer_string)
+    !taken?(integer_string) && integer_string.to_i >= 1 && integer_string.to_i <= 9
   end
 
 end
