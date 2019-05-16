@@ -32,7 +32,7 @@ class Game
   end
 
   def turn
-    Puts "please enter a number"
+    puts "please enter a number"
     move = @board.valid_move?(current_player.move)
     if move
       @board.update(current_player.move.to_i - 1)
