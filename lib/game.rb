@@ -32,7 +32,13 @@ class Game
   end
 
   def turn
-
+    Puts "please enter a number"
+    current_player.move
+    if won?
+      puts "Congratulations #{winner}!"
+    elsif draw?
+      puts "Cat's Game!"
+    end
   end
 
 end
