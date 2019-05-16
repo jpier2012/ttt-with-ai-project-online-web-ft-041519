@@ -33,7 +33,7 @@ class Game
 
   def turn
     puts "please enter a number"
-    turn
+    binding.pry
 
     move = current_player.move(@board.cells)
     if @board.valid_move?(move)
