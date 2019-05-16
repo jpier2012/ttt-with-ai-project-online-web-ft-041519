@@ -38,7 +38,6 @@ class Game
     else
       puts "Please enter a valid move"
     end
-    binding.pry
     turn
   end
 end
