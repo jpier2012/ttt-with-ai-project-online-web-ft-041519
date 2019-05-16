@@ -35,6 +35,7 @@ class Game
     puts "please enter a number"
     if @board.valid_move?(current_player.move(@board.cells))
       @board.update(current_player.move(@board.cells).to_i - 1, current_player)
+      binding.pry
     else
       puts "Please enter a valid move"
     end
