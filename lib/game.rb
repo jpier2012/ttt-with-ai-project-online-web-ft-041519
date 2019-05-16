@@ -33,12 +33,9 @@ class Game
 
   def turn
     Puts "please enter a number"
-    current_player.move
-    if won?
-      puts "Congratulations #{winner}!"
-    elsif draw?
-      puts "Cat's Game!"
-    end
+    move = @board.valid_move?(current_player.move)
+    if move
+      @board.update(current_player.move.to_i - 1)
     turn
   end
 
