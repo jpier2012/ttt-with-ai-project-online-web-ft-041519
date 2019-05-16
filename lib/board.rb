@@ -31,7 +31,7 @@ class Board
 
   # checks if the @cells array is full
   def full?
-    @cells.all? { |c| c != " " }
+    @cells.all? { |c| c == "X" || c == "O" }
   end
 
   def turn_count
