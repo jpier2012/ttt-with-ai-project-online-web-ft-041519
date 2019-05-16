@@ -10,8 +10,7 @@ class Game
   end
 
   def current_player
-    binding.pry
-    @player_1 if @player_1.token == "X" && @board.turn_count.even?
+    @board.turn_count.even? ? @player_1 : @player_2
     @player_2 if @player_2.token == "X" && @board.turn_count.even?
   end
 
