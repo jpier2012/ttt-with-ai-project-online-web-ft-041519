@@ -11,7 +11,6 @@ class Game
 
   def current_player
     @board.turn_count.even? ? @player_1 : @player_2
-    @player_2 if @player_2.token == "X" && @board.turn_count.even?
   end
 
   def won?
