@@ -36,6 +36,7 @@ class Game
     move = @board.valid_move?(current_player.move)
     if move
       @board.update(current_player.move.to_i - 1)
+    end
     turn
   end
 
