@@ -1,7 +1,9 @@
 class Players::Human < Player
   def move(input)
     puts "Please input"
-    gets
+    g = gets
+    puts g
+    binding.pry
   end
 
 end
