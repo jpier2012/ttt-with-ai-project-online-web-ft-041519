@@ -1,5 +1,6 @@
 class Players::Computer < Player
-  def move
+  def move(input)
+    puts ""
   end
 
 end
