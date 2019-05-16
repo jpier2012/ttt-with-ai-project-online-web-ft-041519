@@ -35,6 +35,7 @@ class Board
   end
 
   def turn_count
+    binding.pry
     @cells.count { |x| x == "X" || x == "O" }
   end
 
