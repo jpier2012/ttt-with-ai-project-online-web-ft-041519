@@ -32,15 +32,15 @@ class Game
   end
 
   def turn
-    move = ""
-    until @board.valid_move?(move)
-      puts "please enter a number"
-      move = current_player.move(@board.cells)
-      if @board.valid_move?(move)
-        @board.update(move.to_i - 1, current_player)
-      else
-        puts "Please enter a valid move"
-      end
+    puts "please enter a number"
+    move = current_player.move(@board.cells)
+    binding.pry
+    if @board.valid_move?(move)
+      @board.update(move.to_i - 1, current_player)
+    else
+      puts "Please enter a valid move"
+      turn
     end
+    turn
   end
 end
