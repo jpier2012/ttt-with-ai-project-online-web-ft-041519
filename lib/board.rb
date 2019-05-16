@@ -35,7 +35,7 @@ class Board
   end
 
   def turn_count
-    @cells.count { |x| x != " "}
+    @cells.count { |x| x == "X" || x == "O" }
   end
 
   def taken?(integer_string)
