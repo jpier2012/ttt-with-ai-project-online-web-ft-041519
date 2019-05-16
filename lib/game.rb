@@ -41,5 +41,6 @@ class Game
       puts "Please enter a valid move"
     end
     turn
+    binding.pry
   end
 end
