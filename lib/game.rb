@@ -28,7 +28,7 @@ class Game
   end
 
   def winner
-    won?[0]
+    @board.cells[won?[0]]
   end
 
   def turn
@@ -39,6 +39,7 @@ class Game
     elsif draw?
       puts "Cat's Game!"
     end
+    turn
   end
 
 end
