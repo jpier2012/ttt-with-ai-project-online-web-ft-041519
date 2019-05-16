@@ -33,8 +33,8 @@ class Game
 
   def turn
     puts "please enter a number"
-    move = @board.valid_move?(current_player.move)
-    if move
+    move = current_player.move(@board.cells)
+    if @board.valid_move?(move)
       @board.update(current_player.move.to_i - 1)
     end
     turn
