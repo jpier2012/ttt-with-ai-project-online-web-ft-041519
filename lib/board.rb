@@ -26,7 +26,7 @@ class Board
   # takes 2 arguments - 1st is a position to occupy, the 2nd is the player object (human or computer)
   # when you update the index, set it equal to the token of the player by calling #token
   def update(integer_string, player)
-    @cells[integer_string.to_i - 1] = player.token
+    @cells[integer_string] = player.token
   end
 
   # checks if the @cells array is full
