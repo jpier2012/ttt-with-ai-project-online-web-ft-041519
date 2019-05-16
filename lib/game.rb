@@ -39,7 +39,7 @@ class Game
     else
       puts "Please enter a valid move"
     turn
-  end
+    end
   end
 
 end
