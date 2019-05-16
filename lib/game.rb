@@ -41,5 +41,6 @@ class Game
       puts "Please enter a valid move"
       turn
     end
+    turn
   end
 end
