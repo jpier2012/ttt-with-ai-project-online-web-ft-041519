@@ -27,7 +27,7 @@ class Board
   # when you update the index, set it equal to the token of the player by calling #token
   def update(integer_string, player)
     binding.pry
-    position(integer_string) = player.token
+    #position(integer_string) = player.token
   end
 
   # checks if the @cells array is full
