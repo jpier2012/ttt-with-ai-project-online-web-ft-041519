@@ -35,7 +35,7 @@ class Game
     puts "please enter a number"
     move = current_player.move(@board.cells)
     if @board.valid_move?(move)
-      @board.update(move.to_i - 1)
+      @board.update(move.to_i - 1, current_player)
     else
       puts "Please enter a valid move"
     turn
