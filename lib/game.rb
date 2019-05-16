@@ -38,8 +38,7 @@ class Game
       @board.update(move.to_i - 1, current_player)
     else
       puts "Please enter a valid move"
+      turn
     end
-    turn
   end
-
 end
